@@ -3,7 +3,7 @@ var mongoose =require('mongoose')
 var bodyParser=require('body-parser')
 
 
-const Coursemodel=mongoose.model("coursedetails",
+const Employemodel=mongoose.model("employedetails",
 
 {
     employename:String,
