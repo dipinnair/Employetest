@@ -1,21 +1,27 @@
 {
   "name": "dipintest",
   "version": "1.0.0",
-  "description": "myproj",
-  "main": "empl.js",
+  "description": "\"# employeap\"",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "author": "",
+
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/dipinnair/employetest.git"
+},
+  "author": "dipin",
   "license": "ISC",
-  "dependencies": {
+  "bugs": {
+    "url": "https://github.com/dipinnair/employetest/issues"
+  }, 
+   "homepage": "https://github.com/dipinnair/employetest#readme",
+"dependencies": {
     "express": "^4.17.1",
-    "exprss": "0.0.1-security",
+    "express": "0.0.1-security",
     "mongoose": "^5.8.3"
   },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "Employetest"
-  }
+  "devDependencies": {}
+
 }
