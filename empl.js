@@ -6,8 +6,8 @@ var bodyParser=require('body-parser')
 const Employemodel=mongoose.model("employedetails",
 
 {
-    employename:String,
-    description:String,
+    name:String,
+    designation:String,
     salary:String,
     companyname:String
     
@@ -50,8 +50,8 @@ res.send('hello');
 
 app.post('/Employe',function(req,res){
 
- var employename=req.body.employename
- var description=req.body.description
+ var employename=req.body.name
+ var designation=req.body.designation
  var salary=req.body.salary
  var companyname=req.body.companyname
  
@@ -101,14 +101,29 @@ app.post('/remove',(req,res)=>{
     
     var result=Employemodel.findByIdAndRemove( id,(error,data)=>{
         if(error){
-            throw(error);
+            newFunction(error)
         }
         else{
             res.send("succesfully removed" + data);
         }
     })
 })
+app.post('/search',(req,res)=>{
+    var employename=req.body.employename;
+    var result=Employemodel.findByIdAndSearch(id,{"employename":employename},(error,data)=>{
+if(error){
+    throw error;
+}
+else{
 
+res.send("succesfully searched" + data);
+}
+    })
+})
 app.listen(process.env.PORT || 3000,()=>{
     console.log('server started')
 })
+85
+function newFunction(error) {
+    throw (error)
+}
