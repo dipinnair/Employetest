@@ -123,7 +123,4 @@ res.send("succesfully searched" + data);
 app.listen(process.env.PORT || 3000,()=>{
     console.log('server started')
 })
-85
-function newFunction(error) {
-    throw (error)
-}
+

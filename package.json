@@ -1,27 +1,25 @@
 {
   "name": "dipintest",
   "version": "1.0.0",
-  "description": "\"# employeap\"",
+  "description": "",
   "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
+  "dependencies": {
+    "express": "^4.17.1",
+    "exprss": "^0.0.1-security",
+    "mongoose": "^5.8.4"
   },
-
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/dipinnair/employetest.git"
-},
-  "author": "dipin",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipinnair/Employetest.git"
+  },
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dipinnair/employetest/issues"
-  }, 
-   "homepage": "https://github.com/dipinnair/employetest#readme",
-"dependencies": {
-    "express": "^4.17.1",
-    "express": "0.0.1-security",
-    "mongoose": "^5.8.3"
+    "url": "https://github.com/dipinnair/Employetest/issues"
   },
-  "devDependencies": {}
-
+  "homepage": "https://github.com/dipinnair/Employetest#readme"
 }
