@@ -110,7 +110,7 @@ app.post('/remove',(req,res)=>{
 })
 app.post('/search',(req,res)=>{
     var employename=req.body.employename;
-    var result=Employemodel.findByIdAndSearch(id,{"employename":employename},(error,data)=>{
+    var result=Employemodel.find({"name":employename},(error,data)=>{
 if(error){
     throw error;
 }
