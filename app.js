@@ -92,7 +92,7 @@ var result=Employemodel.findByIdAndUpdate(id,{"employename":employename,"descrip
         throw error;
 }
 else{
-    res.send("succesfully Updated" + data);
+    res.send(data);
 }
 })
 })
@@ -104,7 +104,7 @@ app.post('/remove',(req,res)=>{
             newFunction(error)
         }
         else{
-            res.send("succesfully removed" + data);
+            res.send(data);
         }
     })
 })
@@ -116,7 +116,7 @@ if(error){
 }
 else{
 
-res.send("succesfully searched" + data);
+res.send(data);
 }
     })
 })
