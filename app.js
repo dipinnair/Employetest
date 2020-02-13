@@ -85,6 +85,7 @@ var employename=req.body.employename;
 var description=req.body.description;
 var salary=req.body.salary;
 var companyname=req.body.companyname;
+    var id=req.body.id;
 
 var result=Employemodel.findByIdAndUpdate(id,{"employename":employename,"description":description,"salary":salary,"companyname":companyname},(error,data)=>{
 
@@ -97,6 +98,7 @@ else{
 })
 })
 app.post('/remove',(req,res)=>{
+    var id=req.body.id;
 
     
     var result=Employemodel.findByIdAndRemove( id,(error,data)=>{
